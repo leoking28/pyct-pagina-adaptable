@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:  black;
+    --color-secundario:  #f6f6f6;
+    --color-terciario:  #22d4fd;
+    --fuente-monserat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+    --color-hover: #272727;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+background-color: var(--color-primario);
+color:var(--color-secundario);
+height: 100vh;
+box-sizing: border-box;
+}
+
+.tituloDestaque{
+    color:var(--color-terciario);
+}
+
+.pres{
+    display: flex;
+    align-items: center;
+    padding: 8% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+.contenidoPresentacion{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo{
+    font-family: var(--fuente-krona);
+    font-size: 2.25rem;
+}
+.presentacion_contenido_texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-monserat);
+}
+.presentacion__enlaces{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.presentacion_botones{
+    border: 2px solid var(--color-secundario);
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-monserat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion_botones:hover{
+    background-color: var(--color-hover);
+}
+.imagen_mujer{
+width: 50%;
+
+}
+
+.subtitulo_enlaces{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.creador{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    font-family: var(--fuente-monserat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header{
+    display: flex;
+    gap: 80px;
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu{
+    color:var(--color-terciario);
+    font-family: var(--fuente-monserat);
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 80px;
+}
+.header_enlace{
+    text-decoration:none;
+    color: var(--color-terciario);
+}
+
+@media(max-width: 1200px){
+
+    .header{
+        padding: 10%;
+        justify-content: center;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+    .pres{
+        flex-direction: column-reverse;
+        padding:5%;
+    }
+
+    .contenidoPresentacion{
+        width: auto;
+    }
+
+
+}
